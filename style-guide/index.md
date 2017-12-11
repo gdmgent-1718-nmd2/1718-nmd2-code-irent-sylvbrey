@@ -4,7 +4,7 @@ published: true
 # ─────────────────────
 title: Style Guide
 ---
-[Terug]({{ site.baseurl }}{% link pages/index.html %}){:.btn.btn-primary.mt-1}
+[Terug]({{ site.baseurl }}){:.btn.btn-primary.mt-1}
 
 Style Guide
 ===========

@@ -1,0 +1,354 @@
+
+
+  .logo{
+  width: 130px;
+  height: 180px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ 
+  }
+
+  .icoon1{
+    width: 30%;
+    margin-top: 30%;
+    
+  }
+
+  .icoon2{
+    width: 30%;
+    margin-top: 30%;
+  }
+
+  .vlam{
+    width: 19%;
+    margin-top: 20%;
+  }
+
+  .berg{
+    width: 28%;
+    margin-top: 22%;
+  }
+
+  .persoon{
+    width: 22%;
+    margin-top: 20%;
+  }
+
+  .hometekst{
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .homefoto1{
+    margin: 0 auto;
+  }
+
+  h1{
+   margin-top: 6%;
+   font-size: $titelsfontsize;
+   font-weight: 400;
+   color: $primary;
+    
+  }
+  
+  h2{
+    font-size: 18px;
+    font-weight: 400;
+    color:$primary;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    color: $gewonetekst;
+    font-size: 16px;
+  }
+
+  .tekst_index{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  ul{
+    list-style-type: none;
+    text-align: center;
+  }
+  .lijntje{
+    border: 1px solid $primary;
+    width: 50px;
+    margin-bottom: 5%;
+    border-radius: 1rem;
+  }
+
+  .info1{
+    margin-bottom: 5%;
+  }
+
+  .sterretje{
+    font-size: 11px;
+    color: $gewonetekst;
+    font-weight:300;
+    margin-bottom: 5%;
+  }
+
+  .btn-outline-primary {
+    font-size: 16px;
+    color: $primary;
+    background-color: transparent;
+    background-image: none;
+    border-color: $primary;
+    border-radius: 2rem;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+  .btn-outline-primary:hover{
+    background-color: $primary;
+    border-color: $primary;
+
+}
+
+.btn-outline-primary{
+  justify-content: center;
+  vertical-align: middle;
+  margin-bottom: 20%;
+}
+
+
+.pulmino{
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.lijstje{
+  width: 24%;
+}
+
+.uitroepteken{
+  width: 13%;
+}
+
+.geld{
+  width: 30%;
+}
+
+.tijdsduur{
+  width: 19%;
+}
+
+.herstel{
+  width: 20%;
+}
+
+.image_container{
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.homefoto1 {
+  width: 75%;
+  opacity: 0.3;
+  border-radius: 2rem;
+  margin-bottom: 10%;
+  opacity: 1;
+  display: block;
+  background: 50% 50% no-repeat;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.home:hover .homefoto1 {
+  opacity: 0.1;
+}
+
+.tekst_index {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5%;
+  width: 65%;
+}
+
+.home:hover .tekst_index {
+  opacity: 1.0;
+  background-color: rgba(237, 164, 156, 0.4);
+  border-radius: 2rem;
+ 
+}
+
+.info_tekst{
+  font-weight: 300;
+}
+.pulmino_inleiding{
+  font-weight: 300;
+  font-style: italic;
+}
+  
+
+  /* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+
+}
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+  h1{
+    margin-top: 6%;
+    font-size: 20px;
+     
+   }
+  .btn-outline-primary {
+    font-size: 18px;
+   }
+
+   .vlam{
+    width: 18%;
+    margin-top: 25%;
+  }
+
+  .berg{
+    width: 34%;
+    margin-top: 27%;
+  }
+
+  .persoon{
+    width: 25%;
+    margin-top: 25%;
+  }
+
+  .image_container{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .logo{
+    width: 200px;
+    height: 280px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+
+  h1{
+    margin-top: 6%;
+    font-size: 25px;
+     
+   }
+  h2{
+    font-size: 23px;
+  }
+  .btn-outline-primary {
+    font-size: 20px;
+   }
+
+   .vlam{
+    width: 21%;
+    margin-top: 30%;
+  }
+
+  .berg{
+    width: 37%;
+    margin-top: 32%;
+  }
+
+  .persoon{
+    width: 28%;
+    margin-top: 30%;
+  }
+
+  .image_container{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .homefoto1{
+    width: 100%;
+    opacity: 0.3;
+    border-radius: 2rem;
+  }
+  .tekst-col-3{
+    margin-bottom: 11%;
+  }
+
+  .tekst_index{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+
+.homefoto1 {
+  margin-bottom: 10%;
+  opacity: 1;
+  display: block;
+  background: 50% 50% no-repeat;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.home:hover .homefoto1 {
+  opacity: 0.1;
+}
+
+.tekst_index {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+}
+
+.home:hover .tekst_index {
+  opacity: 1.0;
+  background-color: rgba(237, 164, 156, 0.4);
+  border-radius: 2rem;
+ 
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+
+  h1{
+    margin-top: 6%;
+    font-size: 25px;
+     
+   }
+
+  h2{
+    font-size: 23px;
+  }
+  .btn-outline-primary {
+    font-size: 20px;
+   }
+  .logo{
+    width: 240px;
+    height: 340px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    }
+
+}

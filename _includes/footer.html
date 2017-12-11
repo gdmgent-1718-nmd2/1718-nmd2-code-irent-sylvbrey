@@ -1,5 +1,16 @@
-<nav class="navbar fixed-bottom navbar-light bg-light">
+<nav class="navbar invers-navbar navbar-light kleur">
 {%- if site.show-style-guide %}
-    <a href="{{ site.baseurl }}{% link style-guide/index.md %}" class="btn">Style Guide</a>
+    <div class="col-12 col-md-12 col-lg-12 text-center">
+        <a href="index.html"><img class="logo_footer" src="{{ site.baseurl }}/assets/img/pulmino_footer.png"></a>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-12 footer">
+        <p> Meeuwstraat 80, 900 Gent  I  051 78 64 23   I  pulmino@gmail.com </p>
+    </div>
+
+    <div class="col-12 text-center">
+        <a href="https://www.instagram.com/"><img class="socialmedia instagram" src="{{ site.baseurl }}/assets/img/instagram.png"></a>
+        <a href="https://www.facebook.com/"><img class="socialmedia facebook" src="{{ site.baseurl }}/assets/img/facebook.png"></a>
+    </div>
 {%- endif %}
 </nav>

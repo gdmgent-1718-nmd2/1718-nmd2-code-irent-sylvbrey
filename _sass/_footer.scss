@@ -1,0 +1,55 @@
+.footer{
+    justify-content: center;
+    margin: 0 auto;
+    color: $gewonetekst;
+}
+
+.kleur{
+    background-color: rgb(230, 245, 249);
+}
+
+.logo_footer{
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.socialmedia{
+    width: 10%;
+}
+
+.socialmedia:hover{
+    width: 11%;
+}
+
+@media (min-width: 768px) {
+    .logo_footer{
+        width: 10%;
+    }
+
+    .socialmedia{
+        width: 5%;
+    }
+
+    .socialmedia:hover{
+        width: 6%;
+    }
+    
+}
+@media (min-width: 992px) {
+    .footer{
+        color: $gewonetekst;
+        font-size: 30px;
+    }
+    .logo_footer{
+        width: 10%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .footer{
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
