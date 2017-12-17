@@ -44,6 +44,10 @@
 
   }
 
+  .betaal{
+    text-align: center;
+  }
+
   .homefoto1{
     margin: 0 auto;
   }
@@ -220,6 +224,29 @@
   font-weight: 400;
 }
 
+.intro_huren{
+  text-align: center;
+  font-weight: 300;
+  color: $primary;
+}
+
+.lijntje_huren{
+  width: 50%;
+  border: 0.5px solid $primary;
+  border-radius: 2rem;
+  margin-bottom: 6%;
+  margin-top: 3%;
+  
+}
+
+.totaalprijs{
+  border-top: 1px solid $primary;
+}
+
+.knop_uitlijning{
+  text-align: right;
+}
+
 h3{
   font-family: Lato, sans-serif;
   font-size: 19px;
@@ -316,6 +343,31 @@ input[type=verzenden]:hover {
 }
 
 /* einde contact formulier */
+
+  /* gegevensformulier */
+
+  .annulatieverzekering{
+    margin-top: 4%;
+  }
+  .form-control{
+    width: 33%;
+    border-radius: 2rem;
+    border: none;
+    background-color: $elementen;
+    color: $gewonetekst;
+  }
+
+  .form-control:focus{
+    outline: none;
+  }
+
+  #date{
+    color: $gewonetekst;
+    border-radius: 2rem;
+    border: 1px solid $primary;
+    padding: 2%;
+  }
+  /* gegevensformulier */
   
 iframe{
   justify-content: center;
@@ -324,12 +376,22 @@ iframe{
 }
 
 .betaalstrook{
-  width: 40%;
+  width: 65%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   margin-bottom: 5%;
 }
+
+.streep{
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.knop_volgende{
+  margin-top: 17%;
+}
+
 
   /* Small devices (landscape phones, 576px and up)*/
 
@@ -449,8 +511,22 @@ iframe{
     transition-property: width;
   }
 
-
   /* einde contact formulier */
+
+  .betaalstrook{
+    width: 45%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .gegevensformulier{
+    margin-bottom: 5%;
+  }
+
+
+
 }
 
 
@@ -539,6 +615,14 @@ iframe{
   background-color: rgba(237, 164, 156, 0.4);
   border-radius: 2rem;
  
+}
+
+.betaalstrook{
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 }
