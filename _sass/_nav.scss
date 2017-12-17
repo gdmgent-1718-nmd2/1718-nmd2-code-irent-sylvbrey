@@ -1,5 +1,38 @@
  /* NAVIGATION BAR
  -------------------------------------------------- */
+
+ .hamburger{
+  width: 25px;
+  height: 20px;
+}
+.hamburger:hover{
+  width: 28px;
+  height: 23px;
+}
+
+.nav-item{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  border-bottom: 2px solid white;
+  
+}
+
+@media (min-width: 576px) {
+  .hamburger{
+    width: 30px;
+    height: 25px;
+  }
+  .hamburger:hover{
+    width: 33px;
+    height: 28px;
+  }
+  .nav-item{
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+  
+}
  #navigation {
     min-height: 70px !important;
     padding-top: 10px;
@@ -21,7 +54,16 @@
     text-align: right;
     margin-left: auto;
     margin-top: auto;
+    margin-right: 10%;
+    margin-top: 5%;
+    border: none;
   }
+
+  .navbar-toggler:focus{
+    outline: none;
+  }
+
+
 
   #navigation .navbar-brand {
     padding-right: 28px;
@@ -48,11 +90,6 @@
   }
   .navbar-nav{
     width: 100%;
-  }
-  .nav-item{
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
   }
 
   .navbar-light .navbar-nav .nav-link.active {
@@ -115,6 +152,7 @@
     padding-right: 25px;
     padding-left: 25px;
   }
+
 
 
 

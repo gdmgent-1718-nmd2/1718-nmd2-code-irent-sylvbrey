@@ -39,6 +39,11 @@
     text-align: center;
   }
 
+  .contact{
+    margin-bottom: 5%;
+
+  }
+
   .homefoto1{
     margin: 0 auto;
   }
@@ -55,7 +60,7 @@
     font-size: 18px;
     font-weight: 400;
     color:$primary;
-    text-align: center;
+    ;
   }
 
   p{
@@ -78,10 +83,6 @@
     width: 50px;
     margin-bottom: 5%;
     border-radius: 1rem;
-  }
-
-  .info1{
-    margin-bottom: 5%;
   }
 
   .sterretje{
@@ -144,7 +145,7 @@
   width: 200px;
   height: 100px;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .homefoto1 {
@@ -189,7 +190,146 @@
   font-weight: 300;
   font-style: italic;
 }
+
+.carousel{
+  width:60%;
   
+}
+
+#carouselExampleIndicators{
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.carousel-inner{
+  border-radius: 2rem;
+}
+
+.img_pulmino_pagina{
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.carousel-caption{
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  color: $primary;
+  font-weight: 400;
+}
+
+h3{
+  font-family: Lato, sans-serif;
+  font-size: 19px;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.table th, .table td{
+  border: none;
+  font-family: Lato, sans-serif;
+}
+
+.gegevens{
+  font-size: 18px;
+  color: $gewonetekst;
+  font-weight: 400;
+}
+.gegevens_info{
+  color: $anderetekst;
+  font-weight: 300;
+}
+
+/*contact formulier */
+
+input[type=text],
+select,
+textarea {
+  font-weight: 300;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border-bottom: 2px solid rgb(214, 217, 238);
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+.label{
+  font-size: 18px;
+  color: $gewonetekst;
+}
+
+input[type=verzenden] {
+  color: $primary;
+  padding: 12px 10px;
+  border-color: $primary;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=verzenden]:hover {
+  background-color: $primary;
+  color: white;
+}
+
+.underline{
+  border: none;
+  border-bottom: solid 2px rgb(214, 217, 238);
+  width: 90%;
+  color: $anderetekst;
+  margin-top: 25px;
+}
+
+.underline_textarea{
+  border: none;
+  border-bottom: solid 2px rgb(214, 217, 238);
+  width: 100%;
+  color: $anderetekst;
+  margin-top: 25px;
+
+}
+
+.underline:focus{
+  width: 105%;
+  border-bottom-color: $primary;
+  transition: 100ms;
+  outline: none;
+  transition-duration: 200ms;
+  transition-property: width;
+}
+
+
+.underline_textarea:focus{
+  width: 105%;
+  border-bottom-color: $primary;
+  transition: 100ms;
+  outline: none;
+  transition-duration: 200ms;
+  transition-property: width;
+}
+
+/* einde contact formulier */
+  
+iframe{
+  justify-content: center;
+  margin-bottom: 5%;
+  border-radius: 2rem;
+}
+
+.betaalstrook{
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
 
   /* Small devices (landscape phones, 576px and up)*/
 
@@ -227,6 +367,7 @@
     width: 300px;
     height: 200px;
     margin: 0 auto;
+    margin-bottom: 5%;
   }
   .logo{
     width: 200px;
@@ -235,6 +376,81 @@
     margin-bottom: 5%;
    
     }
+
+  /*contact formulier */
+
+  input[type=text],
+  select,
+  textarea {
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border-bottom: 2px solid rgb(214, 217, 238);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+
+  .label{
+    font-size: 18px;
+    color: $gewonetekst;
+  }
+
+  input[type=verzenden] {
+    color: $primary;
+    padding: 12px 10px;
+    border-color: $primary;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  input[type=verzenden]:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  .underline{
+    border: none;
+    border-bottom: solid 2px rgb(214, 217, 238);
+    width: 90%;
+    color: $anderetekst;
+    margin-top: 25px;
+  }
+
+  .underline_textarea{
+    border: none;
+    border-bottom: solid 2px rgb(214, 217, 238);
+    width: 100%;
+    color: $anderetekst;
+    margin-top: 25px;
+
+  }
+
+  .underline:focus{
+    width: 105%;
+    border-bottom-color: $primary;
+    transition: 100ms;
+    outline: none;
+    transition-duration: 200ms;
+    transition-property: width;
+  }
+
+
+  .underline_textarea:focus{
+    width: 105%;
+    border-bottom-color: $primary;
+    transition: 100ms;
+    outline: none;
+    transition-duration: 200ms;
+    transition-property: width;
+  }
+
+
+  /* einde contact formulier */
 }
 
 
