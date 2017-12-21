@@ -1,10 +1,8 @@
-
-
   .logo{
-  width: 130px;
-  height: 180px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+    width: 130px;
+    height: 180px;
+    margin-top: 5%;
+    margin-bottom: 5%;
  
   }
 
@@ -37,15 +35,22 @@
   .hometekst{
     margin-bottom: 5%;
     text-align: center;
+    color: $primary;
   }
 
   .contact{
     margin-bottom: 5%;
+    font-size: 18px;
 
   }
 
   .betaal{
     text-align: center;
+  }
+
+  .bevestigingsfoto{
+    border-radius: 2rem;
+    margin-bottom: 5%;
   }
 
   .homefoto1{
@@ -119,12 +124,6 @@
   margin-bottom: 20%;
 }
 
-
-.pulmino{
-  width: 30%;
-  margin-bottom: 30px;
-}
-
 .lijstje{
   width: 24%;
 }
@@ -149,6 +148,29 @@
   width: 200px;
   height: 100px;
   margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+.img_pulmino_pagina{
+  margin: 0 auto;
+  width: 95%;
+  opacity: 0.3;
+  border-radius: 3rem;
+  opacity: 1;
+  display: block;
+  background: 50% 50% no-repeat;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.tekst_pulmino{
+  text-align: center;
+  padding-top: 12%;
+  font-style: italic;
+  color: $primary;
+  font-weight: 300;
+  font-size: 18px;
   margin-bottom: 10%;
 }
 
@@ -190,38 +212,12 @@
 .info_tekst{
   font-weight: 300;
 }
+
 .pulmino_inleiding{
   font-weight: 300;
   font-style: italic;
-}
-
-.carousel{
-  width:60%;
-  
-}
-
-#carouselExampleIndicators{
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-.carousel-inner{
-  border-radius: 2rem;
-}
-
-.img_pulmino_pagina{
-  width: 80%;
-  border-radius: 1rem;
-}
-
-.carousel-caption{
-  font-family: Lato, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: $primary;
-  font-weight: 400;
 }
 
 .intro_huren{
@@ -288,7 +284,7 @@ textarea {
 
 
 .label{
-  font-size: 18px;
+  font-size: 16px;
   color: $gewonetekst;
 }
 
@@ -320,6 +316,7 @@ input[type=verzenden]:hover {
   width: 100%;
   color: $anderetekst;
   margin-top: 25px;
+  margin-bottom: 20%;
 
 }
 
@@ -341,6 +338,7 @@ input[type=verzenden]:hover {
   transition-duration: 200ms;
   transition-property: width;
 }
+
 
 /* einde contact formulier */
 
@@ -367,12 +365,18 @@ input[type=verzenden]:hover {
     border: 1px solid $primary;
     padding: 2%;
   }
-  /* gegevensformulier */
+  .gegevensformulier{
+    margin-bottom: 15%;
+  }
+  
+  /* einde gegevensformulier */
   
 iframe{
   justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 25%;
   border-radius: 2rem;
+  width: 70%;
+  height: 50%;
 }
 
 .betaalstrook{
@@ -392,11 +396,56 @@ iframe{
   margin-top: 17%;
 }
 
+.betalingsmethode{
+  margin-bottom: 5%;
+}
+
+.form-check-input{
+  margin-left: -2rem;
+}
+.maestro{
+  margin-left: -2.5rem;
+}
+
+.bankkaart{
+  width: 10%;
+}
+
+.img_creditcard{
+  width: 10%;
+}
+
+.creditcard{
+  margin-left: 7.3%;
+}
+
+.img_maestro{
+  width: 12%;
+}
 
   /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
 
+  .img_creditcard{
+    width: 8%;
+  }
+
+  .creditcard{
+    margin-left: 6%;
+  }
+
+  .pulmino_inleiding{
+    font-size: 20px;
+  }
+
+  .label{
+    font-size: 18px;
+  }
+  .contact{
+    font-size: 22px;
+
+}
 }
 /* Medium devices (tablets, 768px and up)*/
 
@@ -524,8 +573,17 @@ iframe{
   .gegevensformulier{
     margin-bottom: 5%;
   }
+  .img_pulmino4{
+    margin-bottom: 10%;
+  }
 
+  .img_creditcard{
+    width: 5%;
+  }
 
+  .creditcard{
+    margin-left: 3%;
+  }
 
 }
 
@@ -625,6 +683,10 @@ iframe{
   margin-bottom: 5%;
 }
 
+.img_creditcard{
+  width: 5%;
+}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -649,6 +711,10 @@ iframe{
     margin-top: 5%;
     margin-bottom: 5%;
     justify-content: center;
+    }
+
+    .img_creditcard{
+      width: 5%;
     }
 
 }

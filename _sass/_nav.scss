@@ -11,14 +11,14 @@
 }
 
 .nav-item{
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 300;
   text-align: center;
   border-bottom: 2px solid white;
   
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .hamburger{
     width: 30px;
     height: 25px;
@@ -30,6 +30,10 @@
   .nav-item{
     border-right: 2px solid white;
     border-bottom: none;
+  }
+
+  .nav-item{
+    font-size: 20px;
   }
   
 }
@@ -118,7 +122,6 @@
     right: 0;
   }
 }
-
 
   @media (max-width: 768px) {
     #navigation #navbar {
