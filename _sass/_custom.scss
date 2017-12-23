@@ -1,15 +1,15 @@
+/* iconen/logo */
+
   .logo{
     width: 130px;
     height: 180px;
     margin-top: 5%;
     margin-bottom: 5%;
- 
   }
 
   .icoon1{
     width: 30%;
     margin-top: 30%;
-    
   }
 
   .icoon2{
@@ -32,24 +32,54 @@
     margin-top: 20%;
   }
 
+  .lijstje{
+    width: 24%;
+  }
+
+  .uitroepteken{
+    width: 13%;
+  }
+
+  .geld{
+    width: 30%;
+  }
+
+  .tijdsduur{
+    width: 19%;
+  }
+
+  .herstel{
+    width: 20%;
+  }
+  
+  .betaalstrook{
+    width: 65%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: $align-center;
+    margin-bottom: 5%;
+  }
+
+/* einde iconen/logo */
+
   .hometekst{
     margin-bottom: 5%;
-    text-align: center;
+    text-align: $align-center;
     color: $primary;
   }
 
   .contact{
     margin-bottom: 5%;
-    font-size: 18px;
-
+    font-size: $fontsize3;
   }
 
   .betaal{
-    text-align: center;
+    text-align: $align-center;
   }
 
   .bevestigingsfoto{
     border-radius: 2rem;
+    width: 55%;
     margin-bottom: 5%;
   }
 
@@ -58,24 +88,22 @@
   }
 
   h1{
-   margin-top: 6%;
-   font-size: $titelsfontsize;
-   font-weight: 400;
-   color: $primary;
-    
+    margin-top: 6%;
+    font-size: $fontsize3;
+    font-weight: $fontweight3;
+    color: $primary;
   }
   
   h2{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: $fontsize3;
+    font-weight: $fontweight2;
     color:$primary;
-    ;
   }
 
   p{
-    text-align: center;
+    text-align: $align-center;
     color: $gewonetekst;
-    font-size: 16px;
+    font-size: $fontsize1;
   }
 
   .tekst_index{
@@ -85,8 +113,9 @@
 
   ul{
     list-style-type: none;
-    text-align: center;
+    text-align: $align-center;
   }
+
   .lijntje{
     border: 1px solid $primary;
     width: 50px;
@@ -95,14 +124,14 @@
   }
 
   .sterretje{
-    font-size: 11px;
+    font-size: $fontsize_klein;
     color: $gewonetekst;
     font-weight:300;
     margin-bottom: 5%;
   }
 
   .btn-outline-primary {
-    font-size: 16px;
+    font-size: $fontsize1;
     color: $primary;
     background-color: transparent;
     background-image: none;
@@ -110,275 +139,251 @@
     border-radius: 2rem;
     padding-right: 50px;
     padding-left: 50px;
-}
+  }
 
   .btn-outline-primary:hover{
     background-color: $primary;
     border-color: $primary;
+  }
 
-}
+  .btn-outline-primary{
+    justify-content: center;
+    vertical-align: middle;
+    margin-bottom: 20%;
+  }
 
-.btn-outline-primary{
-  justify-content: center;
-  vertical-align: middle;
-  margin-bottom: 20%;
-}
+  .image_container{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
 
-.lijstje{
-  width: 24%;
-}
+  .img_pulmino_pagina{
+    margin: 0 auto;
+    width: 95%;
+    opacity: 0.3;
+    border-radius: 3rem;
+    opacity: 1;
+    display: block;
+    background: 50% 50% no-repeat;
+    transition: .5s ease;
+  }
 
-.uitroepteken{
-  width: 13%;
-}
+  .div_pulmino{
+    border-radius: 3rem;
+  }
 
-.geld{
-  width: 30%;
-}
+  .column {
+    display: inline-block;
+    text-align: $align-center;
+  }
 
-.tijdsduur{
-  width: 19%;
-}
+  figure {
+    overflow: hidden;
+  }
 
-.herstel{
-  width: 20%;
-}
+  .column img {
+    display: block;
+    width: 90%;
+  }
 
-.image_container{
-  width: 200px;
-  height: 100px;
-  margin: 0 auto;
-  margin-bottom: 10%;
-}
+  .column#zoomIn img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+  .column#zoomIn:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
-.img_pulmino_pagina{
-  margin: 0 auto;
-  width: 95%;
-  opacity: 0.3;
-  border-radius: 3rem;
-  opacity: 1;
-  display: block;
-  background: 50% 50% no-repeat;
-  transition: .5s ease;
-}
+  .tekst_pulmino{
+    text-align: $align-center;
+    padding-top: 12%;
+    font-style: italic;
+    color: $primary;
+    font-weight: $fontweight1;
+    font-size: $fontsize3;
+    margin-bottom: 10%;
+  }
 
-.div_pulmino{
-   border-radius: 3rem;
-}
+  .homefoto1 {
+    width: 75%;
+    opacity: 0.3;
+    border-radius: 2rem;
+    margin-bottom: 10%;
+    opacity: 1;
+    display: block;
+    background: 50% 50% no-repeat;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
-.column {
-	display: inline-block;
-	text-align: center;
-}
+  .home:hover .homefoto1 {
+    opacity: 0.1;
+  }
 
-figure {
-	overflow: hidden;
-}
+  .tekst_index {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 5%;
+    width: 65%;
+  }
 
-.column img {
-	display: block;
-	width: 90%;
-}
+  .home:hover .tekst_index {
+    opacity: 1.0;
+    background-color: $lichtroze;
+    border-radius: 2rem;
+  }
 
-.column#zoomIn img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
-}
-.column#zoomIn:hover img {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
+  .info_tekst{
+    font-weight: $fontweight1;
+  }
 
-.tekst_pulmino{
-  text-align: center;
-  padding-top: 12%;
-  font-style: italic;
-  color: $primary;
-  font-weight: 300;
-  font-size: 18px;
-  margin-bottom: 10%;
-}
+  .pulmino_inleiding{
+    font-weight: $fontweight1;
+    font-style: italic;
+    font-size: $fontsize2;
+    color: $primary;
+  }
 
-.homefoto1 {
-  width: 75%;
-  opacity: 0.3;
-  border-radius: 2rem;
-  margin-bottom: 10%;
-  opacity: 1;
-  display: block;
-  background: 50% 50% no-repeat;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
+  .intro_huren{
+    text-align: $align-center;
+    font-weight: $fontweight1;
+    color: $primary;
+  }
 
-.home:hover .homefoto1 {
-  opacity: 0.1;
-}
+  .lijntje_huren{
+    width: 50%;
+    border: 0.5px solid $primary;
+    border-radius: 2rem;
+    margin-bottom: 6%;
+    margin-top: 3%;
+    
+  }
 
-.tekst_index {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 5%;
-  width: 65%;
-}
+  .totaalprijs{
+    border-top: 1px solid $primary;
+  }
 
-.home:hover .tekst_index {
-  opacity: 1.0;
-  background-color: rgba(237, 164, 156, 0.4);
-  border-radius: 2rem;
- 
-}
+  .knop_uitlijning{
+    text-align: $align-right;
+  }
 
-.info_tekst{
-  font-weight: 300;
-}
+  h3{
+    font-family: Lato, sans-serif;
+    font-size: $fontsize4;
+    color: white;
+    font-weight: $fontweight1;
+    font-style: italic;
+  }
 
-.pulmino_inleiding{
-  font-weight: 300;
-  font-style: italic;
-  font-size: 17px;
-  color: $primary;
-}
+  .table th, .table td{
+    border: none;
+    font-family: Lato, sans-serif;
+  }
 
-.intro_huren{
-  text-align: center;
-  font-weight: 300;
-  color: $primary;
-}
-
-.lijntje_huren{
-  width: 50%;
-  border: 0.5px solid $primary;
-  border-radius: 2rem;
-  margin-bottom: 6%;
-  margin-top: 3%;
-  
-}
-
-.totaalprijs{
-  border-top: 1px solid $primary;
-}
-
-.knop_uitlijning{
-  text-align: right;
-}
-
-h3{
-  font-family: Lato, sans-serif;
-  font-size: 19px;
-  color: white;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.table th, .table td{
-  border: none;
-  font-family: Lato, sans-serif;
-}
-
-.gegevens{
-  font-size: 18px;
-  color: $gewonetekst;
-  font-weight: 400;
-}
-.gegevens_info{
-  color: $anderetekst;
-  font-weight: 300;
-}
+  .gegevens{
+    font-size: $fontsize3;
+    color: $gewonetekst;
+    font-weight: $fontweight2;
+  }
+  .gegevens_info{
+    color: $anderetekst;
+    font-weight: $fontweight1;
+  }
 
 /*contact formulier */
 
-input[type=text],
-select,
-textarea {
-  font-weight: 300;
-  font-size: 16px;
-  width: 100%;
-  padding: 12px;
-  border-bottom: 2px solid rgb(214, 217, 238);
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+  input[type=text],
+  select,
+  textarea {
+    font-weight: $fontweight1;
+    font-size: $fontsize1;
+    width: 100%;
+    padding: 12px;
+    border-bottom: 2px solid rgb(214, 217, 238);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .label{
+    font-size: $fontsize1;
+    color: $gewonetekst;
+  }
 
+  input[type=verzenden] {
+    color: $primary;
+    padding: 12px 10px;
+    border-color: $primary;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: $align-center;
+  }
 
-.label{
-  font-size: 16px;
-  color: $gewonetekst;
-}
+  input[type=verzenden]:hover {
+    background-color: $primary;
+    color: white;
+  }
 
-input[type=verzenden] {
-  color: $primary;
-  padding: 12px 10px;
-  border-color: $primary;
-  border-radius: 2rem;
-  cursor: pointer;
-  text-align: center;
-}
+  .underline{
+    border: none;
+    border-bottom: solid 2px rgb(214, 217, 238);
+    width: 90%;
+    color: $anderetekst;
+    margin-top: 25px;
+  }
 
-input[type=verzenden]:hover {
-  background-color: $primary;
-  color: white;
-}
+  .underline_textarea{
+    border: none;
+    border-bottom: solid 2px rgb(214, 217, 238);
+    width: 100%;
+    color: $anderetekst;
+    margin-top: 25px;
+    margin-bottom: 20%;
+  }
 
-.underline{
-  border: none;
-  border-bottom: solid 2px rgb(214, 217, 238);
-  width: 90%;
-  color: $anderetekst;
-  margin-top: 25px;
-}
+  .underline:focus{
+    width: 105%;
+    border-bottom-color: $primary;
+    transition: 100ms;
+    outline: none;
+    transition-duration: 200ms;
+    transition-property: width;
+  }
 
-.underline_textarea{
-  border: none;
-  border-bottom: solid 2px rgb(214, 217, 238);
-  width: 100%;
-  color: $anderetekst;
-  margin-top: 25px;
-  margin-bottom: 20%;
+  .underline_textarea:focus{
+    width: 105%;
+    border-bottom-color: $primary;
+    transition: 100ms;
+    outline: none;
+    transition-duration: 200ms;
+    transition-property: width;
+  }
 
-}
-
-.underline:focus{
-  width: 105%;
-  border-bottom-color: $primary;
-  transition: 100ms;
-  outline: none;
-  transition-duration: 200ms;
-  transition-property: width;
-}
-
-
-.underline_textarea:focus{
-  width: 105%;
-  border-bottom-color: $primary;
-  transition: 100ms;
-  outline: none;
-  transition-duration: 200ms;
-  transition-property: width;
-}
-
-.mail_verzonden{
-  font-weight: 300;
-  color: $anderetekst;
-}
-
+  .mail_verzonden{
+    font-weight: $fontweight1;
+    color: $anderetekst;
+  }
 
 /* einde contact formulier */
 
-  /* gegevensformulier */
+
+/* gegevensformulier */
 
   .annulatieverzekering{
     margin-top: 4%;
   }
+
   .form-control{
     width: 33%;
     border-radius: 2rem;
@@ -397,6 +402,7 @@ input[type=verzenden]:hover {
     border: 1px solid $primary;
     padding: 2%;
   }
+
   .gegevensformulier{
     margin-bottom: 15%;
   }
@@ -405,66 +411,58 @@ input[type=verzenden]:hover {
     color: $primary;
     background-color: $anderetekst;
   }
+
+/* einde gegevensformulier */
   
-  /* einde gegevensformulier */
-  
-iframe{
-  justify-content: center;
-  margin-bottom: 25%;
-  border-radius: 2rem;
-  width: 70%;
-  height: 50%;
-}
+  iframe{
+    justify-content: center;
+    margin-bottom: 25%;
+    border-radius: 2rem;
+    width: 70%;
+    height: 50%;
+  }
 
-.betaalstrook{
-  width: 65%;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 5%;
-}
+  .streep{
+    border-bottom: 1px solid;
+    width: 100%;
+  }
 
-.streep{
-  border-bottom: 1px solid;
-  width: 100%;
-}
+  .knop_volgende{
+    margin-top: 17%;
+  }
 
-.knop_volgende{
-  margin-top: 17%;
-}
+  .knop_controleer{
+    margin-top: 7%;
+  }
 
-.knop_controleer{
-  margin-top: 7%;
-}
+  .betalingsmethode{
+    margin-bottom: 5%;
+  }
 
-.betalingsmethode{
-  margin-bottom: 5%;
-}
+  .form-check-input{
+    margin-left: -2rem;
+  }
+  .maestro{
+    margin-left: -2.5rem;
+  }
 
-.form-check-input{
-  margin-left: -2rem;
-}
-.maestro{
-  margin-left: -2.5rem;
-}
+  .bankkaart{
+    width: 10%;
+  }
 
-.bankkaart{
-  width: 10%;
-}
+  .img_creditcard{
+    width: 10%;
+  }
 
-.img_creditcard{
-  width: 10%;
-}
+  .creditcard{
+    margin-left: 7.3%;
+  }
 
-.creditcard{
-  margin-left: 7.3%;
-}
+  .img_maestro{
+    width: 12%;
+  }
 
-.img_maestro{
-  width: 12%;
-}
-
-  /* Small devices (landscape phones, 576px and up)*/
+/* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
 
@@ -477,27 +475,29 @@ iframe{
   }
 
   .pulmino_inleiding{
-    font-size: 20px;
+    font-size: $fontsize5;
   }
 
   .label{
-    font-size: 18px;
+    font-size: $fontsize3;
   }
+
   .contact{
-    font-size: 22px;
+    font-size: $fontsize7;
+  }
 
 }
-}
+
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {
   h1{
     margin-top: 6%;
-    font-size: 20px;
-     
+    font-size: $fontsize5;
    }
+
   .btn-outline-primary {
-    font-size: 18px;
+    font-size: $fontsize3;
    }
 
    .vlam{
@@ -521,21 +521,21 @@ iframe{
     margin: 0 auto;
     margin-bottom: 5%;
   }
+
   .logo{
     width: 200px;
     height: 280px;
     margin-top: 5%;
     margin-bottom: 5%;
-   
-    }
+  }
 
-  /*contact formulier */
+/*contact formulier */
 
   input[type=text],
   select,
-  textarea {
-    font-weight: 300;
-    font-size: 16px;
+  textarea{
+    font-weight: $fontweight1;
+    font-size: $fontsize1;
     width: 100%;
     padding: 12px;
     border-bottom: 2px solid rgb(214, 217, 238);
@@ -545,9 +545,8 @@ iframe{
     resize: vertical;
   }
 
-
   .label{
-    font-size: 18px;
+    font-size: $fontsize3;
     color: $gewonetekst;
   }
 
@@ -557,7 +556,7 @@ iframe{
     border-color: $primary;
     border-radius: 2rem;
     cursor: pointer;
-    text-align: center;
+    text-align: $align-center;
   }
 
   input[type=verzenden]:hover {
@@ -579,7 +578,6 @@ iframe{
     width: 100%;
     color: $anderetekst;
     margin-top: 25px;
-
   }
 
   .underline:focus{
@@ -591,7 +589,6 @@ iframe{
     transition-property: width;
   }
 
-
   .underline_textarea:focus{
     width: 105%;
     border-bottom-color: $primary;
@@ -601,13 +598,13 @@ iframe{
     transition-property: width;
   }
 
-  /* einde contact formulier */
+/* einde contact formulier */
 
   .betaalstrook{
     width: 45%;
     margin: 0 auto;
     justify-content: center;
-    text-align: center;
+    text-align: $align-center;
     margin-bottom: 5%;
   }
 
@@ -635,17 +632,18 @@ iframe{
 
   h1{
     margin-top: 6%;
-    font-size: 25px;
-     
-   }
-  h2{
-    font-size: 23px;
+    font-size: $fontsize10;
   }
-  .btn-outline-primary {
-    font-size: 20px;
-   }
 
-   .vlam{
+  h2{
+    font-size: $fontsize8;
+  }
+
+  .btn-outline-primary{
+    font-size: $fontsize5;
+  }
+
+  .vlam{
     width: 21%;
     margin-top: 30%;
   }
@@ -671,6 +669,7 @@ iframe{
     opacity: 0.3;
     border-radius: 2rem;
   }
+
   .tekst-col-3{
     margin-bottom: 11%;
   }
@@ -679,54 +678,51 @@ iframe{
     padding-left: 10px;
     padding-right: 10px;
   }
-  
 
+  .homefoto1 {
+    margin-bottom: 10%;
+    opacity: 1;
+    display: block;
+    background: 50% 50% no-repeat;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
-.homefoto1 {
-  margin-bottom: 10%;
-  opacity: 1;
-  display: block;
-  background: 50% 50% no-repeat;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
+  .home:hover .homefoto1 {
+    opacity: 0.1;
+  }
 
-.home:hover .homefoto1 {
-  opacity: 0.1;
-}
+  .tekst_index {
+    transition: .5s ease;
+    opacity: 0;
+    position: $position_2;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+  }
 
-.tekst_index {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 5%;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 80%;
-}
+  .home:hover .tekst_index {
+    opacity: 1.0;
+    background-color: rgba(237, 164, 156, 0.4);
+    border-radius: 2rem;
+  }
 
-.home:hover .tekst_index {
-  opacity: 1.0;
-  background-color: rgba(237, 164, 156, 0.4);
-  border-radius: 2rem;
- 
-}
+  .betaalstrook{
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: $align-center;
+    margin-bottom: 5%;
+  }
 
-.betaalstrook{
-  width: 40%;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.img_creditcard{
-  width: 5%;
-}
+  .img_creditcard{
+    width: 5%;
+  }
 
 }
 
@@ -736,26 +732,26 @@ iframe{
 
   h1{
     margin-top: 6%;
-    font-size: 25px;
-     
-   }
+    font-size: $fontsize10;
+  }
 
   h2{
-    font-size: 23px;
+    font-size: $fontsize8;
   }
+
   .btn-outline-primary {
-    font-size: 20px;
-   }
+    font-size: $fontsize5;
+  }
   .logo{
     width: 240px;
     height: 340px;
     margin-top: 5%;
     margin-bottom: 5%;
     justify-content: center;
-    }
+  }
 
-    .img_creditcard{
-      width: 5%;
-    }
+  .img_creditcard{
+    width: 5%;
+  }
 
 }

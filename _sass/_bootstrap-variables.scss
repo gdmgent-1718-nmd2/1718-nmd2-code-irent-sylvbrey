@@ -8,17 +8,19 @@
 // Color system
 //
 
+$wit: white;
 $paars:rgb(71, 73, 86);
 $donkerblauw: rgb(62, 107, 130);
 $lichterblauw: rgb(92, 159, 194);
 $lichtblauw: rgb(230, 245, 249);
+$roze: rgba(237, 164, 156, 0.4);
 
-
+$witte_elementen: $wit;
 $primary: $paars;
 $gewonetekst: $donkerblauw;
 $anderetekst: $lichterblauw;
 $elementen: $lichtblauw;
-
+$lichtroze: $roze;
 
 // Fonts
 //
@@ -27,4 +29,28 @@ $elementen: $lichtblauw;
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 $font-family-base: Lato, sans-serif;
-$titelsfontsize: 20px;
+
+$fontweight1: 300;
+$fontweight2: 400;
+$fontweight3: 500;
+
+$fontsize_klein: 11px;
+$fontsize1: 16px;
+$fontsize2: 17px;
+$fontsize3: 18px;
+$fontsize4: 19px;
+$fontsize5: 20px;
+$fontsize6: 21px;
+$fontsize7: 22px;
+$fontsize8: 23px;
+$fontsize9: 24px;
+$fontsize10: 25px;
+$fontsize11: 26px;
+
+$align_center: center;
+$align_left: left;
+$align-right: right;
+
+$position_1: relative;
+$position_2: absolute;
+$position_3: static;

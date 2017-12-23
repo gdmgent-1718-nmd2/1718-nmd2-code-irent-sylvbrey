@@ -1,61 +1,64 @@
  /* NAVIGATION BAR
  -------------------------------------------------- */
 
- .hamburger{
-  width: 25px;
-  height: 20px;
-}
-.hamburger:hover{
-  width: 28px;
-  height: 23px;
-}
+  .hamburger{
+    width: 25px;
+    height: 20px;
+  }
 
-.nav-item{
-  font-size: 17px;
-  font-weight: 300;
-  text-align: center;
-  border-bottom: 2px solid white;
-  
-}
+  .hamburger:hover{
+    width: 28px;
+    height: 23px;
+  }
+
+  .nav-item{
+    font-size: $fontsize2;
+    font-weight: $fontweight1;
+    text-align: $align_center;
+    border-bottom: 2px solid $witte_elementen;
+  }
 
 @media (min-width: 992px) {
   .hamburger{
     width: 30px;
     height: 25px;
   }
+
   .hamburger:hover{
     width: 33px;
     height: 28px;
   }
+
   .nav-item{
-    border-right: 2px solid white;
+    border-right: 2px solid $witte_elementen;
     border-bottom: none;
   }
 
   .nav-item{
-    font-size: 20px;
+    font-size: $fontsize5;
   }
-  
+
 }
- #navigation {
+
+  #navigation {
     min-height: 70px !important;
     padding-top: 10px;
   }
 
-.navbar {
+  .navbar {
     padding: 0.5rem 0 !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
+    position: $position_1;
   }
 
   .navbar-toggler{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    text-align: right;
+    position: $position_1;
+    text-align: $align_right;
     margin-left: auto;
     margin-top: auto;
     margin-right: 10%;
@@ -67,31 +70,30 @@
     outline: none;
   }
 
-
-
   #navigation .navbar-brand {
     padding-right: 28px;
     width: 280px;
     border-right: 3px solid $primary;
-    font-family: "hobo-std", sans-serif;
     font-style: italic;
-    font-size: 26px !important;
-    color: #5fcf80 !important;
+    font-size: $fontsize11 !important;
   }
+
   #navigation .navbar-brand .site-logo {
     float: left;
     margin-top: -10px;
     margin-right: 1rem;
     width: 250px;
   }
+
   #navigation #navbar {
     float: right !important;
     margin-right: -15px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: $fontsize1;
+    font-weight: $fontweight2;
     line-height: 38px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5) !important;
   }
+
   .navbar-nav{
     width: 100%;
   }
@@ -99,56 +101,61 @@
   .navbar-light .navbar-nav .nav-link.active {
     color: $primary;
   }
+
   .navbar-light .navbar-nav .nav-link:hover {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: $fontsize3;
+    font-weight: $fontweight2;
   }
 
   .navbar-light .navbar-nav .nav-link{
     color: $primary;
   }
 
-
 @media (max-width: 991px) {
+
   body {
-    position: relative;
+    position: $position_1;
   }
+
   .navbar {
-    position: static !important;
+    position: $position_3 !important;
   }
+
   .navbar-toggler{
-    position: absolute;
+    position: $position_2;
     top: 0;
     right: 0;
   }
+
 }
 
-  @media (max-width: 768px) {
-    #navigation #navbar {
-        float: none !important;
-        margin-right: 0;
-    }
+@media (max-width: 768px) {
+
+  #navigation #navbar {
+    float: none !important;
+    margin-right: 0;
   }
+
+}
+
   #navigation #navbar .navbar-nav li a {
-    color: rgb(230, 245, 249) !important;
+    color: $elementen !important;
   }
+
   #navigation #navbar .navbar-nav li a:hover,
   #navigation #navbar .navbar-nav li a:focus {
-    color: rgb(230, 245, 249) !important;
+    color: $elementen !important;
     border-bottom: 2px solid $primary !important;
   }
+
   #navigation #navbar .navbar-nav .active a {
-    color: rgb(230, 245, 249) !important;
+    color: $elementen !important;
     border-bottom: 2px solid $primary !important;
-  }
-  #navigation #navbar .navbar-nav .dropdown-menu li a {
-    color: #515151 !important;
-    text-shadow: none !important;
   }
 
   #navbarSupportedContent{
-    background-color: rgb(230, 245, 249);
-    border: rgb(230, 245, 249);
+    background-color: $elementen;
+    border: $elementen;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link{
