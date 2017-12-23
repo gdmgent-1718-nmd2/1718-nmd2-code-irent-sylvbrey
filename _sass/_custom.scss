@@ -160,9 +160,36 @@
   display: block;
   background: 50% 50% no-repeat;
   transition: .5s ease;
-  backface-visibility: hidden;
 }
 
+.div_pulmino{
+   border-radius: 3rem;
+}
+
+.column {
+	display: inline-block;
+	text-align: center;
+}
+
+figure {
+	overflow: hidden;
+}
+
+.column img {
+	display: block;
+	width: 90%;
+}
+
+.column#zoomIn img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.column#zoomIn:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
 
 .tekst_pulmino{
   text-align: center;
@@ -339,6 +366,11 @@ input[type=verzenden]:hover {
   transition-property: width;
 }
 
+.mail_verzonden{
+  font-weight: 300;
+  color: $anderetekst;
+}
+
 
 /* einde contact formulier */
 
@@ -368,6 +400,11 @@ input[type=verzenden]:hover {
   .gegevensformulier{
     margin-bottom: 15%;
   }
+
+  .invalid_feedback{
+    color: $primary;
+    background-color: $anderetekst;
+  }
   
   /* einde gegevensformulier */
   
@@ -394,6 +431,10 @@ iframe{
 
 .knop_volgende{
   margin-top: 17%;
+}
+
+.knop_controleer{
+  margin-top: 7%;
 }
 
 .betalingsmethode{
