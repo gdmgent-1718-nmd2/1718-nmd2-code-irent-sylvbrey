@@ -14,7 +14,7 @@
 
   .icoon2{
     width: 30%;
-    margin-top: 30%;
+    margin-top: 26%;
   }
 
   .vlam{
@@ -38,6 +38,7 @@
 
   .uitroepteken{
     width: 13%;
+    margin-top: 21%;
   }
 
   .geld{
@@ -50,6 +51,7 @@
 
   .herstel{
     width: 20%;
+    margin-top: 20%;
   }
   
   .betaalstrook{
@@ -156,7 +158,7 @@
     width: 200px;
     height: 100px;
     margin: 0 auto;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .img_pulmino_pagina{
@@ -210,35 +212,19 @@
   }
 
   .homefoto1 {
-    width: 75%;
+    width: 88%;
     opacity: 0.3;
     border-radius: 2rem;
     margin-bottom: 10%;
-    opacity: 1;
-    display: block;
-    background: 50% 50% no-repeat;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-
-  .home:hover .homefoto1 {
-    opacity: 0.1;
+    opacity: 0.2;
   }
 
   .tekst_index {
-    transition: .5s ease;
-    opacity: 0;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 43%;
+    left: 17.5%;
     padding: 5%;
     width: 65%;
-  }
-
-  .home:hover .tekst_index {
-    opacity: 1.0;
     background-color: $lichtroze;
     border-radius: 2rem;
   }
@@ -412,6 +398,14 @@
     background-color: $anderetekst;
   }
 
+  .gegevens{
+    font-size: $fontsize1;
+  }
+
+  .gegevens_info{
+    font-size: $fontsize0;
+  }
+
 /* einde gegevensformulier */
   
   iframe{
@@ -462,9 +456,36 @@
     width: 12%;
   }
 
+  .table{
+    width: 50%;
+    max-width: 90%;
+  }
+
+  .table th, .table td{
+    padding: 0.15rem;
+  }
+
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
+
+  .homefoto1 {
+    width: 88%;
+    opacity: 0.3;
+    border-radius: 2rem;
+    margin-bottom: 10%;
+    opacity: 0.2;
+  }
+
+  .tekst_index {
+    position: absolute;
+    top: 43%;
+    left: 17.5%;
+    padding: 5%;
+    width: 65%;
+    background-color: $lichtroze;
+    border-radius: 2rem;
+  }
 
   .img_creditcard{
     width: 8%;
@@ -491,6 +512,39 @@
 /* Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {
+
+  .homefoto1 {
+    width: 88%;
+    opacity: 0.3;
+    border-radius: 2rem;
+    margin-bottom: 10%;
+    opacity: 0.2;
+  }
+
+  .tekst_index {
+    position: absolute;
+    top: 52%;
+    left: 17.5%;
+    padding: 5%;
+    width: 65%;
+    background-color: $lichtroze;
+    border-radius: 2rem;
+  }
+
+  .tekst_index1{
+    position: absolute;
+    top: 44%;
+    left: 33.5%;
+    padding: 5%;
+    width: 33%;
+    background-color: $lichtroze;
+    border-radius: 2rem;
+  }
+
+  .img_index_3{
+    width: 42%;
+  }
+
   h1{
     margin-top: 6%;
     font-size: $fontsize5;
@@ -519,7 +573,6 @@
     width: 300px;
     height: 200px;
     margin: 0 auto;
-    margin-bottom: 5%;
   }
 
   .logo{
@@ -629,6 +682,40 @@
 /* Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) {
+
+  .homefoto1 {
+    width: 75%;
+    opacity: 0.3;
+    border-radius: 2rem;
+    margin-bottom: 10%;
+    opacity: 1;
+    display: block;
+    background: 50% 50% no-repeat;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .home:hover .homefoto1 {
+    opacity: 0.1;
+  }
+
+  .tekst_index {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 5%;
+    width: 65%;
+  }
+
+  .home:hover .tekst_index {
+    opacity: 1.0;
+    background-color: $lichtroze;
+    border-radius: 2rem;
+  }
 
   h1{
     margin-top: 6%;
