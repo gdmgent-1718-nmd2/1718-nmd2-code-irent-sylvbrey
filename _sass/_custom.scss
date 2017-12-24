@@ -676,6 +676,18 @@
     margin-left: 3%;
   }
 
+  .gegevens{
+    font-size: $fontsize2;
+  }
+
+  .gegevens_info{
+    font-size: $fontsize1;
+  }
+
+  .table th, .table td{
+    padding: 0.30rem;
+  }
+
 }
 
 
@@ -809,6 +821,10 @@
 
   .img_creditcard{
     width: 5%;
+  }
+
+  .table th, .table td{
+    padding: 0.45rem;
   }
 
 }
